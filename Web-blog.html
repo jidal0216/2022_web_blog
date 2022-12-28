@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 노말라이즈 */
+body, ul, li {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+a {
+    color:inherit;
+    text-decoration:none;
+}
+/*노말라이즈 끝*/
+
+.main{
+  top:30%;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  position:absolute;
+  width:500px;
+  height:400px;
+  left:50%;
+  transform: translatex(-50%);
+  
+}
+.main2{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+}
+
+.logo{
+  margin-top: 10%;
+  margin-bottom: 40px;
+  font-size:50px;
+  color:skyblue;
+}
+
+#login{
+  width:100%;
+  background-color: pink;
+  border-color: transparent;
+  color: white;
+}
+
+.account{
+  display:block;
+  margin-bottom:3px;
+  padding:3px;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  
+  
+}
+
+#alert{
+  border-color:transparent;
+}
+#bottom{
+  text-align:center;
+}
+.join{
+   display:inline-block;
+}
+
+.id_pw_find{
+  display:inline-block;
+}
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <div class="main2">
+    <h1 class="logo">
+    logo</h1>
+    <div class="container">
+      <input type="text" placeholder = "ID" id="id" class="account">
+      <input type="text" placeholder = "Password" id="passwd" class="account">
+    <button id="login" class="account"><a href="#">login</a></button>
+    <p id="alert" class="account"></p>
+      </div>
+      </div>
+      <div id="bottom">
+        <a href="#"><div class="id_pw_find">아이디 / 비밀번호 찾기
+      </div></a>
+      <div class="join"><a href="#">/   회원가입</a></div>
+        </div>
+  
+    </div> 
+</body>
+</html>
